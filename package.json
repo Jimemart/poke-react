@@ -17,7 +17,7 @@
     "pretty": "prettier --write --tab-width 4 \"src/**/*.js\"",
   },
   "husky": {
-    "precommit": "lint-staged && npm run test"
+    "pre-commit": "lint-staged && npm run test"
   },
   "lint-staged": {
     "*.js": [
