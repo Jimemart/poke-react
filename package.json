@@ -1,0 +1,22 @@
+{
+  "name": "react-basic",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "punycode": "^2.1.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "testcafe": "^0.21.1"
+  }
+}
