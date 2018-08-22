@@ -1,5 +1,5 @@
 {
-  "extends": "airbnb",
+  "extends": ["airbnb", "plugin:testcafe/recommended"],
   "rules": {
     "react/jsx-filename-extension": [
       1,
