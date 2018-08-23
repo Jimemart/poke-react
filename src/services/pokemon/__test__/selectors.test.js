@@ -1,5 +1,5 @@
-import { getPokemonInfo, getPokemonLoading } from "../selectors"
-import { state } from "./__mocks__/pokemon.mocks"
+import { getPokemonInfo, getPokemonLoading } from "../selectors";
+import { state } from "./__mocks__/pokemon.mocks";
 
 describe("getPokemonInfo selector", () => {
   it("should return the pokemon", () => {
@@ -8,12 +8,12 @@ describe("getPokemonInfo selector", () => {
       img: [["bar", "bar"], ["foo", "foo"]],
       weight: 30,
       height: 20,
-      nature: [{ name: "me", color: "white" }],
-    }
-    expect(getPokemonInfo(state)).toEqual(result)
-  })
+      nature: [{ name: "me", color: "white" }]
+    };
+    expect(getPokemonInfo(state)).toEqual(result);
+  });
 
   it("should return loading", () => {
-    expect(getPokemonLoading(state)).toEqual(false)
-  })
-})
+    expect(getPokemonLoading(state)).toEqual(false);
+  });
+});

@@ -5,7 +5,7 @@ export const pokemon = {
     front_default: "bar",
     back_default: "bar",
     front_shiny: "foo",
-    back_shiny: "foo",
+    back_shiny: "foo"
   },
   height: 20,
   weight: 30,
@@ -13,18 +13,18 @@ export const pokemon = {
   abilities: [],
   types: [
     {
-      type: { name: "me" },
-    },
-  ],
-}
+      type: { name: "me" }
+    }
+  ]
+};
 
 export const state = {
   pokemon: {
     loading: false,
     data: {
-      pokemon,
-    },
-  },
-}
+      pokemon
+    }
+  }
+};
 
-export const nature = ["grass"]
+export const nature = ["grass"];
