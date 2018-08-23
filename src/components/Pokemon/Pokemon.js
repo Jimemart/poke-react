@@ -1,8 +1,9 @@
 import React, { Component } from "react"
 import nanoid from "nanoid"
 import { debounce } from "lodash"
-import { FlexContainer, Card, Title, Pill } from "../../UI"
+import { FlexContainer, Card, Title } from "../../UI"
 import { ImageHolder } from "./ImageHolder"
+import { Nature } from "./Nature"
 import { Input } from "../shared"
 
 class Pokemon extends Component {
@@ -51,9 +52,11 @@ class Pokemon extends Component {
       const natures = (
         <FlexContainer justify="center" direction="column" align="center">
           {nature.map(elem => (
-            <Pill key={`nature-${nanoid()}`} background={elem.color}>
-              {elem.name}
-            </Pill>
+            <Nature
+              key={`nature-${nanoid()}`}
+              background={elem.color}
+              name={elem.name}
+                    />
           ))}
         </FlexContainer>
       )

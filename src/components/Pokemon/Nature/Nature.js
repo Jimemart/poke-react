@@ -1,8 +1,8 @@
-import React from "react";
-import { Pill } from "../../../UI";
+import React from "react"
+import { Pill } from "../../../UI"
 
 export const Nature = props => {
-    const { nature } = props;
+  const { name, background } = props
 
-    return <Pill>{nature}</Pill>;
-};
+  return <Pill background={background}>{name}</Pill>
+}
