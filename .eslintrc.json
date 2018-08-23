@@ -29,7 +29,8 @@
     "camelcase": "off",
     "no-underscore-dangle": "off",
     "max-len": "off",
-    "no-array-index-key": "off"
+    "no-use-before-define": "off",
+    "no-param-reassign": "warn"
   },
   "plugins": ["jest", "testcafe"],
   "env": {
