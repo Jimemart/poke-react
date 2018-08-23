@@ -28,7 +28,7 @@
     "coverage": "react-scripts test --env=jsdom --coverage",
     "e2e": "yarn testcafe chrome e2e",
     "eject": "react-scripts eject",
-    "pretty": "prettier --write --tab-width 4 \"src/**/*.js\"",
+    "pretty": "prettier --write --use-tabs \"src/**/*.js\"",
     "precommit": "lint-staged && npm run coverage"
   },
   "lint-staged": {
