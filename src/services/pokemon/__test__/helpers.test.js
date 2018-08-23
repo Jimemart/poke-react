@@ -5,7 +5,7 @@ describe("configurePokemon helper", () => {
   it("formats the pokemon object", () => {
     const result = {
       name: "foo",
-      img: "bar",
+      img: [["bar", "bar"], ["foo", "foo"]],
       weight: 30,
       height: 20,
       nature: ["me"],

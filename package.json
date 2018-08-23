@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "lodash": "^4.17.10",
+    "nanoid": "^1.2.1",
     "punycode": "^2.1.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",

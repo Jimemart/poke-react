@@ -3,6 +3,9 @@ export const pokemon = {
   base_experience: 64,
   sprites: {
     front_default: "bar",
+    back_default: "bar",
+    front_shiny: "foo",
+    back_shiny: "foo",
   },
   height: 20,
   weight: 30,

@@ -28,7 +28,8 @@
     "no-confusing-arrow": "off",
     "camelcase": "off",
     "no-underscore-dangle": "off",
-    "max-len": "off"
+    "max-len": "off",
+    "no-array-index-key": "off"
   },
   "plugins": ["jest", "testcafe"],
   "env": {

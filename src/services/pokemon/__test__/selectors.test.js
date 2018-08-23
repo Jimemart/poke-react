@@ -5,7 +5,7 @@ describe("getPokemonInfo selector", () => {
   it("should return the pokemon", () => {
     const result = {
       name: "foo",
-      img: "bar",
+      img: [["bar", "bar"], ["foo", "foo"]],
       weight: 30,
       height: 20,
       nature: ["me"],
