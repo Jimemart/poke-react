@@ -8,7 +8,7 @@ describe("getPokemonInfo selector", () => {
       img: [["bar", "bar"], ["foo", "foo"]],
       weight: 30,
       height: 20,
-      nature: ["me"],
+      nature: [{ name: "me", color: "white" }],
     }
     expect(getPokemonInfo(state)).toEqual(result)
   })

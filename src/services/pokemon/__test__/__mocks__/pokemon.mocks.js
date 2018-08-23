@@ -25,3 +25,5 @@ export const state = {
     },
   },
 }
+
+export const nature = ["grass"]

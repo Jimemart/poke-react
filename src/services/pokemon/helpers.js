@@ -1,3 +1,7 @@
+import { natureColors } from "../../utils/colors"
+
+export const setColorForNature = nature => nature.map(elem => ({ name: elem, color: natureColors[elem] || "white" }))
+
 export const configurePokemon = pokemon => {
   if (!pokemon) return {}
   const {
@@ -7,11 +11,13 @@ export const configurePokemon = pokemon => {
     height,
     weight,
   } = pokemon
+
   const nature = types.map(elem => elem.type.name)
+
   return {
     name,
     img: [[front_default, back_default], [front_shiny, back_shiny]],
-    nature,
+    nature: setColorForNature(nature),
     height,
     weight,
   }

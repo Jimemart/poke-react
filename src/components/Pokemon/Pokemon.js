@@ -51,7 +51,9 @@ class Pokemon extends Component {
       const natures = (
         <FlexContainer justify="center" direction="column" align="center">
           {nature.map(elem => (
-            <Pill key={`nature-${nanoid()}`}>{elem}</Pill>
+            <Pill key={`nature-${nanoid()}`} background={elem.color}>
+              {elem.name}
+            </Pill>
           ))}
         </FlexContainer>
       )
