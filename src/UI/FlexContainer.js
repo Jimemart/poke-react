@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const FlexContainer = styled.div`
     display: flex;
@@ -9,4 +9,4 @@ export const FlexContainer = styled.div`
     border: ${props => props.border || "none"};
     border-radius: 3px;
     flex-wrap: wrap;
-`
+`;

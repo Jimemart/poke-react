@@ -1,1 +1,1 @@
-export { ImageHolder } from "./ImageHolder"
+export { ImageHolder } from "./ImageHolder";

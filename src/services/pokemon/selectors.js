@@ -1,7 +1,7 @@
-import { get } from "lodash"
-import { configurePokemon } from "./helpers"
+import { get } from "lodash";
+import { configurePokemon } from "./helpers";
 
 export const getPokemonInfo = state => {
-  const pokemon = get(state.pokemon.data, "pokemon")
-  return configurePokemon(pokemon)
-}
+    const pokemon = get(state.pokemon.data, "pokemon");
+    return configurePokemon(pokemon);
+};

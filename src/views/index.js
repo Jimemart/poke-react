@@ -1,1 +1,1 @@
-export { PokemonContainer } from "./PokemonContainer"
+export { PokemonContainer } from "./PokemonContainer";

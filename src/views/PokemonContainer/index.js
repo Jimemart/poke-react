@@ -1,3 +1,3 @@
-import PokemonContainer from "./PokemonContainer"
+import PokemonContainer from "./PokemonContainer";
 
-export { PokemonContainer }
+export { PokemonContainer };

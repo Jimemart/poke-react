@@ -1,1 +1,1 @@
-export { Pokemon } from "./Pokemon"
+export { Pokemon } from "./Pokemon";

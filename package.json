@@ -35,7 +35,7 @@
     "*.js": [
       "npm run pretty",
       "npx eslint --fix",
-      "git add"
+      "git add ."
     ]
   },
   "devDependencies": {
