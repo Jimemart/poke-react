@@ -5,7 +5,7 @@ const pokemonAPIUrl = `${CONFIG.api.pokemon}`
 
 const maptoFetchPokemon = pokemonId => ({
   method: "GET",
-  url: `${pokemonAPIUrl}/pokemon/${pokemonId}`,
+  url: `${pokemonAPIUrl}pokemon/${pokemonId}/`,
 })
 
-export const fetchPokemon = pokemonId => axios(maptoFetchPokemon(pokemonId)).then(resp => resp)
+export const fetchPokemonApi = pokemonId => axios(maptoFetchPokemon(pokemonId)).then(resp => resp.data)

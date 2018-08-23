@@ -1,34 +1,15 @@
-import React, { Component } from "react"
-import logo from "./logo.svg"
+import React from "react"
+import { Route, Switch, withRouter } from "react-router-dom"
+
 import "./App.css"
+import { PokemonContainer } from "./views"
 
-class App extends Component {
-    state = {
-      hello: "hello",
-    };
+const App = () => (
+  <div className="App">
+    <Switch>
+      <Route path="/" exact component={PokemonContainer} />
+    </Switch>
+  </div>
+)
 
-    render() {
-      const { hello } = this.state
-      return (
-        <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title" id="h1">
-                        Welcome to React
-              {hello}
-            </h1>
-          </header>
-          <p className="App-intro">
-                    To get started, edit
-            {' '}
-            <code>src/App.js</code>
-            {' '}
-and save to
-                    reload.
-          </p>
-        </div>
-      )
-    }
-}
-
-export default App
+export default withRouter(App)

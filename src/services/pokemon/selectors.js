@@ -1,0 +1,7 @@
+import { get } from "lodash"
+import { configurePokemon } from "./helpers"
+
+export const getPokemonInfo = state => {
+  const pokemon = get(state.pokemon.data, "pokemon")
+  return configurePokemon(pokemon)
+}

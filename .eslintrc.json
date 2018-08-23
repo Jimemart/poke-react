@@ -13,7 +13,7 @@
     "import/extensions": { "js": "never" },
     "import/no-extraneous-dependencies": [
       "error",
-      { "devDependencies": ["**/__tests__/*.js", "**/*.test.js", "**/*stories.js"] }
+      { "devDependencies": ["**/__tests__/*.test.js", "**/*.test.js", "**/*stories.js"] }
     ],
     "function-paren-newline": ["off"],
     "arrow-parens": "off",
@@ -27,7 +27,8 @@
     "react/forbid-prop-types": "off",
     "no-confusing-arrow": "off",
     "camelcase": "off",
-    "no-underscore-dangle": "off"
+    "no-underscore-dangle": "off",
+    "max-len": "off"
   },
   "plugins": ["jest", "testcafe"],
   "env": {

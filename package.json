@@ -9,6 +9,7 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
     "redux": "^4.0.0",
     "redux-saga": "^0.16.0",
@@ -18,11 +19,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom --coverage",
+    "test": "react-scripts test --env=jsdom",
+    "coverage": "react-scripts test --env=jsdom --coverage",
     "e2e": "yarn testcafe chrome e2e",
     "eject": "react-scripts eject",
     "pretty": "prettier --write --tab-width 4 \"src/**/*.js\"",
-    "precommit": "lint-staged && npm run test"
+    "precommit": "lint-staged && npm run coverage"
   },
   "lint-staged": {
     "*.js": [
@@ -42,6 +44,7 @@
     "husky": "^0.14.3",
     "lint-staged": "^7.2.2",
     "prettier": "^1.14.2",
+    "redux-saga-test-plan": "^3.7.0",
     "testcafe-react-selectors": "^3.0.0"
   }
 }
