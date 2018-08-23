@@ -28,17 +28,27 @@ class Pokemon extends Component {
         pokemon: { img },
       } = this.props
       const { id } = this.state
+      const search = (
+        <Input
+          value={id}
+          onInputChange={({ target: { value } }) => this.onSearchNewPokemon(value)
+                }
+          placeholder="Introduce el número de pokemon"
+            />
+      )
+
+      const images = (
+        <FlexContainer justify="space-between">
+          {img.map(elem => (
+            <ImageHolder imgs={elem} key={`holder-${nanoid()}`} />
+          ))}
+        </FlexContainer>
+      )
+
       return (
         <FlexContainer justify="center" align="center" height="100vh">
           <Card width="40%" height="80%">
-            <FlexContainer justify="space-between">
-              {img.map(elem => (
-                <ImageHolder
-                  imgs={elem}
-                  key={`holder-${nanoid()}`}
-                            />
-              ))}
-            </FlexContainer>
+            {images}
             <div>
               <Title>{pokemon.name.toUpperCase()}</Title>
             </div>
@@ -56,13 +66,7 @@ class Pokemon extends Component {
                 </h3>
               </div>
             </FlexContainer>
-            <FlexContainer justify="center">
-              <Input
-                value={id}
-                onInputChange={({ target: { value } }) => this.onSearchNewPokemon(value)
-                            }
-                        />
-            </FlexContainer>
+            <FlexContainer justify="center">{search}</FlexContainer>
           </Card>
         </FlexContainer>
       )
