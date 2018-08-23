@@ -20,6 +20,7 @@ export const pokemon = {
 
 export const state = {
   pokemon: {
+    loading: false,
     data: {
       pokemon,
     },

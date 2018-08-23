@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const InputStyled = styled.input`
   width: 60%;
@@ -6,4 +6,4 @@ export const InputStyled = styled.input`
   padding: 10px;
   font-size: 18px;
   border-radius: 5px;
-`
+`;

@@ -1,4 +1,4 @@
-import { getPokemonInfo } from "../selectors"
+import { getPokemonInfo, getPokemonLoading } from "../selectors"
 import { state } from "./__mocks__/pokemon.mocks"
 
 describe("getPokemonInfo selector", () => {
@@ -11,5 +11,9 @@ describe("getPokemonInfo selector", () => {
       nature: [{ name: "me", color: "white" }],
     }
     expect(getPokemonInfo(state)).toEqual(result)
+  })
+
+  it("should return loading", () => {
+    expect(getPokemonLoading(state)).toEqual(false)
   })
 })

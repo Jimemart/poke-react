@@ -1,8 +1,8 @@
-import React from "react"
-import { InputStyled } from "../../../UI"
+import React from "react";
+import { InputStyled } from "../../../UI";
 
 export const Input = props => {
-  const { onInputChange, id, placeholder } = props
+  const { onInputChange, id, placeholder } = props;
   return (
     <InputStyled
       type="number"
@@ -10,5 +10,5 @@ export const Input = props => {
       value={id}
       placeholder={placeholder}
     />
-  )
-}
+  );
+};

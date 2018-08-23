@@ -1,20 +1,20 @@
-import React from "react"
-import renderer from "react-test-renderer"
-import { Nature } from "../Nature"
+import React from "react";
+import renderer from "react-test-renderer";
+import { Nature } from "../Nature";
 
 describe("Nature Component", () => {
   const props = {
     nature: "grass",
-    background: "green",
-  }
+    background: "green"
+  };
 
   it("should render the natures", () => {
     const tree = renderer.create(
       <Nature {...props}>
         <div>Some nested content</div>
-      </Nature>,
-    )
+      </Nature>
+    );
 
-    expect(tree).toMatchSnapshot()
-  })
-})
+    expect(tree).toMatchSnapshot();
+  });
+});

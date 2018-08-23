@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Pill = styled.div`
   color: white;
@@ -11,4 +11,4 @@ export const Pill = styled.div`
   font-weight: bold;
   padding: 5px 10px;
   margin-bottom: 10px;
-`
+`;

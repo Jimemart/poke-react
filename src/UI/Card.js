@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Card = styled.div`
   width: ${props => props.width || "100%"};
@@ -11,4 +11,4 @@ export const Card = styled.div`
   border-radius: 5px;
   padding: 30px;
   box-sizing: border-box;
-`
+`;

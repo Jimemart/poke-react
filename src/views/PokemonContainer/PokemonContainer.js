@@ -1,10 +1,14 @@
 import { connect } from "react-redux"
 import { Pokemon } from "../../components"
 import * as pokemon from "../../services/pokemon/actions"
-import { getPokemonInfo } from "../../services/pokemon/selectors"
+import {
+  getPokemonInfo,
+  getPokemonLoading,
+} from "../../services/pokemon/selectors"
 
 const mapStateToProps = state => ({
   pokemon: getPokemonInfo(state),
+  isLoading: getPokemonLoading(state),
 })
 
 const mapDispatchToProps = dispatch => ({

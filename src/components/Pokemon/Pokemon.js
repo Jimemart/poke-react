@@ -26,6 +26,7 @@ class Pokemon extends Component {
   render() {
     const {
       pokemon: { img, name, weight, height, nature },
+      isLoading,
     } = this.props
 
     const { id } = this.state
@@ -61,29 +62,35 @@ class Pokemon extends Component {
       </FlexContainer>
     )
 
+    const pokemonCard = (
+      <React.Fragment>
+        {images}
+        <div>
+          <Title>{name.toUpperCase()}</Title>
+        </div>
+        <FlexContainer justify="space-around">
+          <div>
+            <h3>
+              Height:
+              {height}
+            </h3>
+          </div>
+          <div>
+            <h3>
+              Weight:
+              {weight}
+            </h3>
+          </div>
+        </FlexContainer>
+        {natures}
+        {search}
+      </React.Fragment>
+    )
+
     return (
       <FlexContainer justify="center" align="center" height="100vh">
         <Card width="40%" height="80%">
-          {images}
-          <div>
-            <Title>{name.toUpperCase()}</Title>
-          </div>
-          <FlexContainer justify="space-around">
-            <div>
-              <h3>
-                Height:
-                {height}
-              </h3>
-            </div>
-            <div>
-              <h3>
-                Weight:
-                {weight}
-              </h3>
-            </div>
-          </FlexContainer>
-          {natures}
-          {search}
+          {isLoading ? "Cargando..." : pokemonCard}
         </Card>
       </FlexContainer>
     )

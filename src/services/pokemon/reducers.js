@@ -1,4 +1,4 @@
-import * as constants from "./constants"
+import * as constants from "./constants";
 
 const initialState = {
   data: {
@@ -13,7 +13,7 @@ const initialState = {
         front_shiny:
           "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png",
         back_shiny:
-          "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/1.png",
+          "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/1.png"
       },
       height: 20,
       weight: 30,
@@ -21,38 +21,38 @@ const initialState = {
       abilities: [],
       types: [
         {
-          type: { name: "me" },
-        },
-      ],
-    },
+          type: { name: "me" }
+        }
+      ]
+    }
   },
   error_code: null,
   error_msg: null,
-  loading: null,
-}
+  loading: null
+};
 
 export const reducer = (state = initialState, action) => {
   switch (action.type) {
     case constants.FETCH_POKEMON:
       return {
         ...state,
-        loading: true,
-      }
+        loading: true
+      };
     case constants.FETCHED_POKEMON:
       return {
         ...state,
         loading: false,
-        data: action.payload,
-      }
+        data: action.payload
+      };
     case constants.FETCH_POKEMON_FAILED:
       return {
         ...state,
         loading: false,
-        ...action.payload,
-      }
+        ...action.payload
+      };
     default:
-      return state
+      return state;
   }
-}
+};
 
-export default reducer
+export default reducer;
