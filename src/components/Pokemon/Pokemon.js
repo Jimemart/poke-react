@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import nanoid from "nanoid"
 import { debounce } from "lodash"
-import { FlexContainer, Card, Title } from "../../UI"
+import { FlexContainer, Card, Title, Pill } from "../../UI"
 import { ImageHolder } from "./ImageHolder"
 import { Input } from "../shared"
 
@@ -24,19 +24,20 @@ class Pokemon extends Component {
 
     render() {
       const {
-        pokemon,
-        pokemon: { img },
+        pokemon: { img, name, weight, height, nature },
       } = this.props
 
       const { id } = this.state
 
       const search = (
-        <Input
-          value={id}
-          onInputChange={({ target: { value } }) => this.onSearchNewPokemon(value)
-                }
-          placeholder="Introduce el número de pokemon"
-            />
+        <FlexContainer justify="center">
+          <Input
+            value={id}
+            onInputChange={({ target: { value } }) => this.onSearchNewPokemon(value)
+                    }
+            placeholder="Introduce el número de pokemon"
+                />
+        </FlexContainer>
       )
 
       const images = (
@@ -47,28 +48,37 @@ class Pokemon extends Component {
         </FlexContainer>
       )
 
+      const natures = (
+        <FlexContainer justify="center" direction="column" align="center">
+          {nature.map(elem => (
+            <Pill key={`nature-${nanoid()}`}>{elem}</Pill>
+          ))}
+        </FlexContainer>
+      )
+
       return (
         <FlexContainer justify="center" align="center" height="100vh">
           <Card width="40%" height="80%">
             {images}
             <div>
-              <Title>{pokemon.name.toUpperCase()}</Title>
+              <Title>{name.toUpperCase()}</Title>
             </div>
             <FlexContainer justify="space-around">
               <div>
                 <h3>
                                 Height:
-                  {pokemon.height}
+                  {height}
                 </h3>
               </div>
               <div>
                 <h3>
                                 Weight:
-                  {pokemon.weight}
+                  {weight}
                 </h3>
               </div>
             </FlexContainer>
-            <FlexContainer justify="center">{search}</FlexContainer>
+            {natures}
+            {search}
           </Card>
         </FlexContainer>
       )

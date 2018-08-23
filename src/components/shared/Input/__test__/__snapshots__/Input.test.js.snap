@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot_1 1`] = `
+<input
+  className="sc-bxivhb ejmKDY"
+  onChange={undefined}
+  placeholder="foo"
+  type="number"
+  value={1}
+/>
+`;

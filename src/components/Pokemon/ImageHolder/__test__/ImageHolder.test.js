@@ -14,6 +14,6 @@ describe("ImageHolder Component", () => {
       </ImageHolder>,
     )
 
-    expect(tree).toMatchSnapshot("snapshot_1")
+    expect(tree).toMatchSnapshot()
   })
 })

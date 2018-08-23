@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot_1 1`] = `
+exports[`ImageHolder Component should render the two images 1`] = `
 <div
-  className="sc-bdVaJa jWaeJN"
+  className="sc-bdVaJa hkHtDr"
   width="40%"
 >
   <div
