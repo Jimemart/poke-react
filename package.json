@@ -28,7 +28,7 @@
     "coverage": "react-scripts test --env=jsdom --coverage",
     "e2e": "yarn testcafe chrome e2e",
     "eject": "react-scripts eject",
-    "pretty": "prettier --write --tab-width 2 \"src/**/*.js\"",
+    "pretty": "pretty-quick",
     "precommit": "lint-staged && npm run coverage"
   },
   "lint-staged": {
@@ -49,6 +49,7 @@
     "husky": "^0.14.3",
     "lint-staged": "^7.2.2",
     "prettier": "^1.14.2",
+    "pretty-quick": "^1.6.0",
     "redux-mock-store": "^1.5.3",
     "redux-saga-test-plan": "^3.7.0",
     "testcafe-react-selectors": "^3.0.0"
