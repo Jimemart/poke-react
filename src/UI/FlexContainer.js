@@ -7,4 +7,5 @@ export const FlexContainer = styled.div`
     height: ${props => props.height || "auto"};
     border: ${props => props.border || "none"};
     border-radius: 3px;
+    flex-wrap: wrap;
 `

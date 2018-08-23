@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Card = styled.div`
     width: ${props => props.width || "100%"};
-    background: red;
+    background: #ea5252;
     height: ${props => props.height || "auto"};
     -webkit-box-shadow: 3px 4px 5px 0px rgba(133, 133, 133, 1);
     -moz-box-shadow: 3px 4px 5px 0px rgba(133, 133, 133, 1);
