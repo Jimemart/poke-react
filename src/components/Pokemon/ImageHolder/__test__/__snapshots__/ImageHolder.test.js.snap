@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot_1 1`] = `
+<div
+  className="sc-bdVaJa jyDCco"
+  width="40%"
+>
+  <div
+    style={
+      Object {
+        "borderRight": "2px solid #ce0808",
+      }
+    }
+  >
+    <img
+      alt="img-0"
+      src="foo"
+    />
+  </div>
+  <div
+    style={
+      Object {
+        "borderRight": "none",
+      }
+    }
+  >
+    <img
+      alt="img-1"
+      src="bar"
+    />
+  </div>
+</div>
+`;

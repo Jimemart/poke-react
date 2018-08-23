@@ -4,6 +4,8 @@ import { createStore, applyMiddleware, compose } from "redux"
 import { Provider } from "react-redux"
 import createSagaMiddleware from "redux-saga"
 import { BrowserRouter } from "react-router-dom"
+import { configure } from "enzyme"
+import Adapter from "enzyme-adapter-react-16"
 
 import rootReducer from "./services/root.reducer"
 import "./index.css"
@@ -26,6 +28,8 @@ const store = createStore(
 )
 
 sagaMiddleware.run(rootSaga)
+
+configure({ adapter: new Adapter() })
 
 const app = (
   <Provider store={store}>

@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "enzyme": "^3.4.4",
+    "enzyme-adapter-react-16": "^1.2.0",
     "lodash": "^4.17.10",
     "nanoid": "^1.2.1",
     "prop-types": "^15.6.2",
@@ -13,6 +15,7 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
+    "react-test-renderer": "^16.4.2",
     "redux": "^4.0.0",
     "redux-saga": "^0.16.0",
     "styled-components": "^3.4.4",
