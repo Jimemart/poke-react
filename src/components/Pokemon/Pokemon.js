@@ -27,7 +27,9 @@ class Pokemon extends Component {
         pokemon,
         pokemon: { img },
       } = this.props
+
       const { id } = this.state
+
       const search = (
         <Input
           value={id}
