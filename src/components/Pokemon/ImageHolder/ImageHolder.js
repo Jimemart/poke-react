@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import nanoid from "nanoid"
 import { FlexContainer } from "../../../UI"
 
@@ -17,4 +18,8 @@ export const ImageHolder = props => {
       ))}
     </FlexContainer>
   )
+}
+
+ImageHolder.propTypes = {
+  imgs: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
