@@ -35,4 +35,12 @@ describe("Pokemon test", () => {
     expect(wrapper.find(Nature)).toHaveLength(1)
     expect(wrapper.find(ImageHolder)).toHaveLength(1)
   })
+
+  it('should not render the pokemon info if loading is true', () => {
+    props.isLoading = true
+    const state = mockStore(initialState)
+    const wrapper = shallow(<Pokemon {...props} store={state} />)
+    expect(wrapper.find(Nature)).toHaveLength(0)
+    expect(wrapper.find(ImageHolder)).toHaveLength(0)
+  })
 })

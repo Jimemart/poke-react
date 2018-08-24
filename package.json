@@ -28,9 +28,14 @@
     "coverage": "react-scripts test --env=jsdom --coverage",
     "e2e": "yarn testcafe chrome e2e",
     "eject": "react-scripts eject",
-    "pretty": "pretty-quick",
-    "precommit": "lint-staged && npm run coverage"
+    "pretty": "pretty-quick"
   },
+   "husky": {
+   "hooks": {
+     "pre-commit": "lint-staged",
+     "pre-push": "npm run coverage"
+   }
+ },
   "lint-staged": {
     "*.js": [
       "npm run pretty",
