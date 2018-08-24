@@ -30,7 +30,7 @@
     "eject": "react-scripts eject",
     "pretty": "pretty-quick"
   },
-   "husky": {
+ "husky": {
    "hooks": {
      "pre-commit": "lint-staged",
      "pre-push": "npm run coverage"
