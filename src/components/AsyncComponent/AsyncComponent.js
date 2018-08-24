@@ -1,28 +1,28 @@
-import React, { Component } from "react"
+/* eslint-disable */
+import React, { Component } from "react";
 
 export default function asyncComponent(getComponent) {
   class AsyncComponent extends Component {
     static Component = null;
 
-    state = { AsyncCmp: AsyncComponent.Component };
+    state = { Component: AsyncComponent.Component };
 
     componentWillMount() {
-      const { AsyncCmp } = this.state
-      if (AsyncCmp) {
-        getComponent().then(cmp => {
-          AsyncComponent.Component = cmp
-          this.setState({ AsyncCmp })
-        })
+      if (!this.state.Component) {
+        getComponent().then(Component => {
+          AsyncComponent.Component = Component;
+          this.setState({ Component });
+        });
       }
     }
 
     render() {
-      const { AsyncCmp } = this.state
-      if (AsyncCmp) {
-        return <AsyncCmp {...this.props} />
+      const { Component } = this.state;
+      if (Component) {
+        return <Component {...this.props} />;
       }
-      return null
+      return null;
     }
   }
-  return AsyncComponent
+  return AsyncComponent;
 }
