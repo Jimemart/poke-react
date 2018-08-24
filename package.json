@@ -6,6 +6,7 @@
     "axios": "^0.18.0",
     "enzyme": "^3.4.4",
     "enzyme-adapter-react-16": "^1.2.0",
+    "testcafe-react-selectors": "^3.0.0",
     "lodash": "^4.17.10",
     "nanoid": "^1.2.1",
     "prop-types": "^15.6.2",
@@ -30,12 +31,12 @@
     "eject": "react-scripts eject",
     "pretty": "pretty-quick"
   },
- "husky": {
-   "hooks": {
-     "pre-commit": "lint-staged",
-     "pre-push": "npm run coverage"
-   }
- },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run coverage"
+    }
+  },
   "lint-staged": {
     "*.js": [
       "npm run pretty",
@@ -51,12 +52,11 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-testcafe": "^0.2.1",
-    "husky": "^0.14.3",
+    "husky": "^1.0.0-rc.13",
     "lint-staged": "^7.2.2",
     "prettier": "^1.14.2",
     "pretty-quick": "^1.6.0",
     "redux-mock-store": "^1.5.3",
-    "redux-saga-test-plan": "^3.7.0",
-    "testcafe-react-selectors": "^3.0.0"
+    "redux-saga-test-plan": "^3.7.0"
   }
 }
