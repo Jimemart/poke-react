@@ -3,5 +3,6 @@
 exports[`Nature Component should render the natures 1`] = `
 <div
   className="sc-ifAKCX kwKGvC"
+  data-hook="nature"
 />
 `;
