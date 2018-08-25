@@ -1,4 +1,4 @@
-import API_CONFIG from "../../environments"
+import API_CONFIG from "environments"
 
 export const CONFIG = {
   api: {

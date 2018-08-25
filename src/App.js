@@ -2,9 +2,9 @@ import React from "react"
 import { Route, Switch, withRouter } from "react-router-dom"
 
 import "./App.css"
-import { asyncComponent } from "./components"
+import { asyncComponent } from "components"
 
-const Pokemon = asyncComponent(() => import("./views/PokemonContainer").then(module => module.PokemonContainer),
+const Pokemon = asyncComponent(() => import("views/PokemonContainer").then(module => module.PokemonContainer),
 )
 
 const App = () => (
