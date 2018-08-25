@@ -1,11 +1,18 @@
 import React, { Component } from "react"
 import nanoid from "nanoid"
 import { debounce } from "lodash"
+import PropTypes from "prop-types"
 
 import { FlexContainer, Card, Title } from "UI"
 import { Input } from "components/shared"
 import { ImageHolder } from "./ImageHolder"
 import { Nature } from "./Nature"
+
+Pokemon.propTypes = {
+  onFetchPokemon: PropTypes.func.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+  pokemon: PropTypes.object.isRequired,
+}
 
 class Pokemon extends Component {
   state = {
