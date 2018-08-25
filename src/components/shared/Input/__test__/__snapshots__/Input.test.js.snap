@@ -6,6 +6,6 @@ exports[`snapshot_1 1`] = `
   onChange={undefined}
   placeholder="foo"
   type="number"
-  value={1}
+  value=""
 />
 `;
