@@ -1,5 +1,7 @@
+import API_CONFIG from "../../environments"
+
 export const CONFIG = {
   api: {
-    pokemon: "https://pokeapi.co/api/v2/"
-  }
-};
+    pokemon: API_CONFIG.pokemon,
+  },
+}
