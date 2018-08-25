@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Pill } from "UI"
 
-Nature.propTypes = {
+const propTypes = {
   name: PropTypes.string.isRequired,
   background: PropTypes.string.isRequired,
 }
@@ -16,3 +16,5 @@ export const Nature = props => {
     </Pill>
   )
 }
+
+Nature.propTypes = propTypes

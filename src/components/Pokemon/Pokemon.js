@@ -8,9 +8,9 @@ import { Input } from "components/shared"
 import { ImageHolder } from "./ImageHolder"
 import { Nature } from "./Nature"
 
-Pokemon.propTypes = {
+const propTypes = {
   onFetchPokemon: PropTypes.func.isRequired,
-  isLoading: PropTypes.bool.isRequired,
+  isLoading: PropTypes.bool,
   pokemon: PropTypes.object.isRequired,
 }
 
@@ -25,11 +25,16 @@ class Pokemon extends Component {
     onFetchPokemon(id)
   }
 
-  onSearchNewPokemon = debounce(val => {
-    const { onFetchPokemon } = this.props
+  onSearchNewPokemon = val => {
     this.setState({ id: val })
+    if (!val) return
+    this.onSearch(val)
+  };
+
+  onSearch = debounce(val => {
+    const { onFetchPokemon } = this.props
     onFetchPokemon(val)
-  }, 300);
+  }, 600);
 
   render() {
     const {
@@ -106,3 +111,5 @@ class Pokemon extends Component {
 }
 
 export default Pokemon
+
+Pokemon.propTypes = propTypes
