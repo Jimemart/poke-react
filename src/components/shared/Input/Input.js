@@ -5,7 +5,7 @@ import { InputStyled } from "UI"
 
 const propTypes = {
   onInputChange: PropTypes.func.isRequired,
-  value: PropTypes.any,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   placeholder: PropTypes.string,
 }
 

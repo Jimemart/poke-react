@@ -22,6 +22,7 @@ This project intends to be a guide for future React projects. The architecture f
 
 - Redux devtools for browser are already installed.
 - Lazy loading included.
+- Absolute paths configured!
 - The project is already configured so you can just delete the stuff that you wont use and replace it with your code.
 - Before every commit husky will run the eslint configuration and prettier.
 - Before every push husky will run all your unit test to make sure they all pass.
